@@ -34,12 +34,18 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -69,10 +75,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Portafolio:build:production"
+              "buildTarget": "Portafolio:build:production",
+              "port": 8095
             },
             "development": {
-              "buildTarget": "Portafolio:build:development"
+              "buildTarget": "Portafolio:build:development",
+              "port": 8094
             }
           },
           "defaultConfiguration": "development"
@@ -102,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5a43038e-46e0-4032-a33b-7019d787b2bb"
   }
 }
