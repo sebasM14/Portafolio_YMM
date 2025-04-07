@@ -39,7 +39,11 @@
             ],
             "styles": [
               "src/styles.css",
-              "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+              "src/scss/bootstrap.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/ngx-toastr/toastr.css"
+              
 
             ],
             "scripts": [
