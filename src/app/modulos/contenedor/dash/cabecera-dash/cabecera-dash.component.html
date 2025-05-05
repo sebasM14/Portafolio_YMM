@@ -102,7 +102,18 @@
  <section id="about" class="about section">
       <div class="container section-title">
         <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Ingeniero de Sistemas y Técnico en Sistemas con pasión por la
+          programación y el diseño. Cuento con habilidades sólidas en el
+          desarrollo de software y en la creación de soluciones
+          creativas e innovadoras para problemas técnicos. Mi interés
+          por la lectura y el aprendizaje continuo me permite
+          mantenerme actualizado en las últimas tendencias
+          tecnológicas. Comprometido con el trabajo en equipo, la
+          superación personal, y con una mentalidad disciplinada,
+          también reflejada en mi pasión por el gimnasio. Busco
+          contribuir al éxito de proyectos tecnológicos desafiantes y al
+          crecimiento de las empresas mediante soluciones efectivas y
+          de alto impacto.</p>
       </div>
     
       <div class="container content-wrapper">
@@ -111,15 +122,16 @@
             <img src="assets/img/FotoYMM.jpg" alt="Profile" />
           </div>
           <div class="col text">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2> Systems  Engeneering UI/UX Designer &amp; Web Developer.</h2>
+            <p class="italic">Ingeniero De Sistemas, Desarrollo de software, técnico en sistemas con diseño en multimedia 
+              Diplomado en Habilidades en Programación con énfasis en aplicaciones móviles </p>
             
             <div class="info-lists">
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>yeiki</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+57 3212449799</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tunja-Boyaca, Colombia</span></li>
               </ul>
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
@@ -136,6 +148,18 @@
         </div>
       </div>
     </section><!-- /About Section -->
+
+
+    <!-- /Skills framework Section -->
+    <div class="icon-grid">
+      <div class="icon-item" *ngFor="let skill of skills">
+        <i [class]="skill.icon + ' ' + skill.colorClass"></i>
+        <span>{{ skill.name }}</span>
+      </div>
+    </div>
+    
+   
+<!-- /Skills Section -->   
 
     <!-- Services Section -->
 
@@ -265,7 +289,12 @@
       </div>
     </section>
     
-<!-- /Skills Section -->   
+<!-- /Skills Section -->  
+
+
+
+
+
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
@@ -295,16 +324,16 @@
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <h4>Ingeniero De Sistemas  &amp; Desarrador fullstack</h4>
+              <h5>2020 - 2025</h5>
+              <p><em>Fundacion Universitaria Juan De Castellanos </em></p>
               <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
             </div><!-- Edn Resume Item -->
 
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <h4>Tecnico en Sistemas &amp; Graphic Design</h4>
+              <h5>2018 - 2020</h5>
+              <p><em>Institucion Educativa Libertador Simon Bolivar</em></p>
               <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
             </div><!-- Edn Resume Item -->
 
@@ -804,11 +833,10 @@
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a appScrollTop class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-  <!-- Preloader -->
+ <!-- Scroll Top -->
+ <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ <!-- Preloader -->
 
 
   <!-- Vendor JS Files -->

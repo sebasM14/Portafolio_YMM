@@ -38,6 +38,18 @@ export class CabeceraDashComponent implements OnInit {
     constructor(private el: ElementRef, private renderer: Renderer2) {
       this.renderer.setStyle(this.el.nativeElement, 'cursor', 'pointer');
     }
+
+    skills = [
+      { name: 'PHP', icon: 'fa-brands fa-php', colorClass: 'php' },
+      { name: 'Laravel', icon: 'fa-brands fa-laravel', colorClass: 'laravel' },
+      { name: 'Angular', icon: 'fa-brands fa-angular', colorClass: 'angular' },
+      { name: 'React', icon: 'fa-brands fa-react', colorClass: 'react' },
+      { name: 'Node.js', icon: 'fa-brands fa-node-js', colorClass: 'node' },
+      { name: 'Java', icon: 'fa-brands fa-java', colorClass: 'java' },
+      { name: 'Spring Boot', icon: 'fa-solid fa-leaf', colorClass: 'spring' }, // usando icono hoja
+      { name: 'Python', icon: 'fa-brands fa-python', colorClass: 'python' },
+    ];
+    
   }
 
   

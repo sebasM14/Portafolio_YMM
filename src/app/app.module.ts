@@ -1,3 +1,4 @@
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,7 +14,9 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ContenedorModule } from './modulos/contenedor/contenedor.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { ToastrModule } from 'ngx-toastr';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     ContenedorModule, // Importa el módulo principal
-    BrowserAnimationsModule
+    BrowserAnimationsModule, // Necesario para animaciones
+    ToastrModule.forRoot(),
+    NgxPaginationModule,
+    ModalModule,
+    FormsModule,
 
 
   ],
