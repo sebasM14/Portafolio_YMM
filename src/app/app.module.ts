@@ -1,4 +1,5 @@
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { FocusTrapModule } from 'ngx-bootstrap/focus-trap';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,11 +18,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
+// Removed FocusTrapModule import: not exported by the installed @angular/cdk version
+
 @NgModule({
   declarations: [
     AppComponent,
-   
+    CabeceraComponent,
+    InicioComponent,
+    ErrorComponent,
+    ContactoComponent,
+    AcercaDeComponent,
+    FooterComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,8 +38,9 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule, // Necesario para animaciones
     ToastrModule.forRoot(),
     NgxPaginationModule,
-    ModalModule,
+    ModalModule.forRoot(),
     FormsModule,
+    // FocusTrapModule removed because it's not exported by the current @angular/cdk package
 
 
   ],

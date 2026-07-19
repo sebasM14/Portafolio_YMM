@@ -67,6 +67,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
+              "aot": false,
               "sourceMap": true
             }
           },
